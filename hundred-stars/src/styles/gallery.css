@@ -1,0 +1,136 @@
+.gallery {
+  position: relative;
+  padding: 140px 8%;
+  overflow: hidden;
+}
+
+.gallery::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.4;
+}
+.light-luxury {
+  background: linear-gradient(180deg,#fafbfc,#ffffff,#f3f5f8);
+  color: #111;
+}
+.dark-luxury {
+  background: linear-gradient(180deg,#0b0b0d,#111114);
+  color: #eee;
+}
+
+.dark-luxury .gallery-card {
+  border: 1px solid rgba(255,120,0,0.15);
+}
+.gallery-header {
+  max-width: 800px;
+  margin-bottom: 70px;
+}
+
+.accent {
+  color: var(--primary-orange);
+}
+
+.lux-divider {
+  width: 100px;
+  height: 3px;
+  margin: 20px 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-orange),
+    transparent
+  );
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 32px;
+}
+.gallery-card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  cursor: pointer;
+
+  aspect-ratio: 72 / 71;   /* 👈 KEY FIX */
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.12);
+
+  transition: all 0.4s ease;
+}
+
+.gallery-card img {
+  position: relative !important;
+  height: 300px !important;
+  width: 100% !important;
+  display: block !important;
+  opacity: 1 !important;
+  z-index: 999 !important;
+}
+
+
+/* Hover zoom */
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+.gallery-card::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(
+    circle,
+    rgba(255,120,0,0.35),
+    transparent 60%
+  );
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.gallery-card:hover::before {
+  opacity: 1;
+}
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 18px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.2),
+    transparent
+  );
+
+  backdrop-filter: blur(6px);
+}
+
+.gallery-overlay span {
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.lux-toggle {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+
+  background: rgba(255,120,0,0.1);
+  border: 1px solid rgba(255,120,0,0.4);
+  color: var(--primary-orange);
+
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+}

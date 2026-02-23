@@ -1,0 +1,17 @@
+:root {
+    --primary-orange: #f97316;
+    --primary-orange-dark: #c2410c;
+  
+    --dark: #111827;
+    --gray: #6b7280;
+    --light-gray: #f9fafb;
+  
+    --white: #ffffff;
+  }
+  
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
