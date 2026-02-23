@@ -29,7 +29,7 @@ export default function Hero() {
   /* ============================= */
 
   const handleWhatsApp = () => {
-    const phoneNumber = "2348000000000"; 
+    const phoneNumber = "+234 707 137 5876"; 
     const message = encodeURIComponent(
       "Hello, I'm interested in your PVC Interior Panels. Please send more details."
     );
@@ -37,7 +37,7 @@ export default function Hero() {
   };
 
   const handleEmail = () => {
-    const email = "info@hundredstars.com";
+    const email = "Hundredstars.pvc@gmail.com";
     const subject = encodeURIComponent("PVC Panel Enquiry");
     const body = encodeURIComponent(
       "Hello,\n\nI would like to request more information about your PVC interior panels.\n\nThank you."

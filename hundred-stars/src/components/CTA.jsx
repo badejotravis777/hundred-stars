@@ -8,7 +8,7 @@ export default function CTA() {
   /* ============================= */
 
   const handleWhatsApp = () => {
-    const phoneNumber = "2348000000000"; // <-- replace with real number
+    const phoneNumber = "+234 707 137 5876"; // <-- replace with real number
     const message = encodeURIComponent(
       "Hello, I'm interested in your PVC Interior Panels. Please send more details."
     );
@@ -17,7 +17,7 @@ export default function CTA() {
   };
 
   const handleEmail = () => {
-    const email = "info@hundredstars.com"; // <-- replace with real email
+    const email = "Hundredstars.pvc@gmail.com"; // <-- replace with real email
     const subject = encodeURIComponent("PVC Panel Enquiry");
     const body = encodeURIComponent(
       "Hello,\n\nI would like to request more information about your PVC interior panels.\n\nThank you."
