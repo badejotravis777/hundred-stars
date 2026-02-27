@@ -8,7 +8,7 @@ export default function CTA() {
   /* ============================= */
 
   const handleWhatsApp = () => {
-    const phoneNumber = "07017906269"; // <-- replace with real number
+    const phoneNumber = "+2347017906269"; 
     const message = encodeURIComponent(
       "Hello, I'm interested in your PVC Interior Panels. Please send more details."
     );
