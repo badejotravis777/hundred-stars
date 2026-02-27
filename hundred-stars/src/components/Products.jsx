@@ -4,8 +4,8 @@ import "../styles/products.css";
 
 import wall from "../assets/panel1.jpg";
 import ceiling from "../assets/panel2.jpg";
-import accessories from "../assets/panel1.jpg";
-import installation from "../assets/panel2.jpg";
+import accessories from "../assets/panel3.png";
+import installation from "../assets/panel4.jpg";
 
 const products = [
   {

@@ -5,7 +5,7 @@ import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
 import img4 from "../assets/img4.png";
 import img5 from "../assets/img5.png";
-import img6 from "../assets/img5.png";
+import img6 from "../assets/img10.png";
 import img7 from "../assets/img7.png";
 import img8 from "../assets/img8.png";
 import img9 from "../assets/img9.png";
@@ -13,36 +13,36 @@ import img9 from "../assets/img9.png";
 
 const galleryItems = [
   {
-    label: "Factory Production Line",
+  
     img: img2
  
   },
   {
-    label: "Panel Installation Process",
+  
     img: img3
   },
   {
-    label: "Interior Wall Finishing",
+
     img: img4
   },
   {
-    label: "Ceiling Panel Installation",
+  
     img: img5
   },
   {
-    label: "LED Integrated Designs",
+  
     img: img6
   },
   {
-    label: "Completed Interior Projects",
+    
     img: img7
   },
   {
-    label: "Completed Interior Projects",
+
     img: img8
   },
   {
-    label: "Completed Interior Projects",
+  
     img: img9
   }
 ];

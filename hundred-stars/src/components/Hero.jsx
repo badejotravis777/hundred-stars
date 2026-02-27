@@ -29,7 +29,7 @@ export default function Hero() {
   /* ============================= */
 
   const handleWhatsApp = () => {
-    const phoneNumber = "+234 707 137 5876"; 
+    const phoneNumber = "07017906269"; 
     const message = encodeURIComponent(
       "Hello, I'm interested in your PVC Interior Panels. Please send more details."
     );
