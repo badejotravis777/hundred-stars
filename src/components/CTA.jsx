@@ -35,7 +35,7 @@ export default function CTA() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2>Ready to Upgrade Your Interior Finishing?</h2>
+        <h2>Ready to Upgrade Your Interior Finishing? </h2>
 
         <p>
           Contact our team today for product enquiries, bulk orders or
