@@ -44,11 +44,11 @@ export default function CTA() {
 
         <div className="cta-buttons">
           <button className="cta-button" onClick={handleWhatsApp}>
-            Chat on WhatsApp
+            Chat on WhatsApp.
           </button>
 
           <button className="cta-outline" onClick={handleEmail}>
-            Reach Us by Email
+            Reach Us by Email.
           </button>
         </div>
       </motion.div>
