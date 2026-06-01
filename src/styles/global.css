@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Inter", system-ui, sans-serif;
+    background-color: #ffffff;
+    color: #1f2937;
+    line-height: 1.6;
+  }
+  
+  
+  section {
+    padding: 90px 8%;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
+
+  :root {
+    --section-padding-x: 8%;
+  }
+  
+  @media (max-width: 768px) {
+    :root {
+      --section-padding-x: 22px;
+    }
+  }
+  
+  section {
+    padding-left: var(--section-padding-x);
+    padding-right: var(--section-padding-x);
+  }
+  
